@@ -61,7 +61,7 @@ section.painel-expansivel {
 section.painel-expansivel > button {
   width: 100%;
   padding: 14px 16px;
-  background: #22007e;
+  background: #3b13aa;
   color: #fff0f0;
   border: 1px solid #3a3f4a;
   font-size: 20px;
@@ -81,7 +81,7 @@ article {
   overflow: hidden;
   margin-top: 12px;
   padding: 14px;
-  background: #1916e7;
+  background: #02005ad7;
   color: #ebd9d9;
   border: 1px solid #3a3f4a;
 }
