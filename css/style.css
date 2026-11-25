@@ -61,8 +61,8 @@ section.painel-expansivel {
 section.painel-expansivel > button {
   width: 100%;
   padding: 14px 16px;
-  background: #ee7b34;
-  color: #000000;
+  background: #22007e;
+  color: #fff0f0;
   border: 1px solid #3a3f4a;
   font-size: 20px;
   text-align: left;
@@ -81,8 +81,8 @@ article {
   overflow: hidden;
   margin-top: 12px;
   padding: 14px;
-  background: #ef8f3c;
-  color: #000000;
+  background: #1916e7;
+  color: #ebd9d9;
   border: 1px solid #3a3f4a;
 }
 
@@ -108,6 +108,6 @@ article small {
 
 article p {
   margin: 0;
-  color: #000000;
+  color: #ffdbdb;
   line-height: 1.6;
 }
