@@ -91,7 +91,7 @@ article {
 article img {
   float: left;
   width: 130px;
-  height: 170px;
+  height: 100%;
   max-width: 100%;
   object-fit: cover;
   margin: 0 16px 4px 0;
