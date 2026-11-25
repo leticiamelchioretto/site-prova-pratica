@@ -114,3 +114,13 @@ article p {
   color: #ffdbdb;
   line-height: 1.6;
 }
+
+@media (max-width: 520px) {
+  article img {
+    float: none;
+    display: block;
+    width: 100%;
+    height: 240px;
+    margin: 0 0 12px;
+  }
+}
