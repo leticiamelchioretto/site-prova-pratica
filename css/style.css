@@ -64,6 +64,7 @@ section.painel-expansivel > button {
   background: #3b13aa;
   color: #fff0f0;
   border: 1px solid #3a3f4a;
+  border-radius: 5px;
   font-size: 20px;
   text-align: left;
   cursor: pointer;
@@ -84,6 +85,7 @@ article {
   background: #02005ad7;
   color: #ebd9d9;
   border: 1px solid #3a3f4a;
+  border-radius: 5px;
 }
 
 article img {
