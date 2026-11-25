@@ -1,75 +1,71 @@
+/* Imagem de fundo da página */
 html {
-  background-color: #1c2128;
-  background-image: linear-gradient(rgba(242, 237, 225, 0.8), rgba(242, 237, 225, 0.8)), url("../img/fundo.webp");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #1c2128; /* cor de reserva, aparece se a imagem não carregar */
+  background-image: linear-gradient(rgba(242, 237, 225, 0.8), rgba(242, 237, 225, 0.8)), url("../img/fundo.webp"); /* Camada clara e transparente (80%) por cima da foto*/
+  background-size: cover; /* a imagem cobre a tela inteira */
+  background-position: center; /* mantém o centro da imagem visível */
+  background-attachment: fixed; /* a imagem fica parada quando a página rola */
 }
 
 body {
-  margin: 0;
+  margin: 0;  /* tira a margem padrão do navegador */
   font-family: Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.5;  /* espaço entre as linhas */
 }
 
-small {
-  color: #152036;
-}
-
+/* Links */
 a {
   color: #000000;
 }
 
 nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 20px;
+  display: flex; /* coloca os itens em linha */
+  flex-wrap: wrap;  /* se não couber, quebra para a linha de baixo */
+  justify-content: center;  /* centraliza os links */
+  gap: 8px 20px;  /* espaço entre os links*/
   margin: 16px 0 0;
   padding: 0;
-  list-style: none;
+  list-style: none; /* tira as bolinhas da lista */
 }
 
 main {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto; /* centraliza */
   padding: 0 20px;
 }
 
 main > section {
-  margin-bottom: 32px;
+  margin-bottom: 32px; /* Espaço entre as seções principais  */
 }
 
 h2 {
-  color: #000000;
+  color: #000000; /* Títulos das seções */
 }
 
-ol {
-  padding-left: 20px;
-}
-
+/* Itens das listas */
 li {
   margin-bottom: 6px;
 }
 
-
+/* Espaço entre um painel e outro */
 section.painel-expansivel {
   margin-bottom: 12px;
 }
 
-
+/* Botão que abre e fecha cada painel */
 section.painel-expansivel > button {
-  width: 100%;
+  width: 100%; /* ocupa a largura toda */
   padding: 14px 16px;
   background: #3b13aa;
   color: #fff0f0;
   border: 1px solid #3a3f4a;
-  border-radius: 5px;
+  border-radius: 5px; /*aredondamento dos cantos */
   font-size: 20px;
   text-align: left;
   cursor: pointer;
 }
 
+/* Os cards ficam escondidos por padrão... */
 section.painel-expansivel article {
   display: none;
 }
@@ -114,6 +110,69 @@ article p {
   color: #ffdbdb;
   line-height: 1.6;
 }
+
+form {
+  padding: 16px;
+  background: #fa6b0c;
+  border: 1px solid #3a3f4a;
+  border-radius: 3px;
+}
+
+label {
+  display: block;
+  margin: 14px 0 4px;
+  font-weight: bold;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fa8639;
+  color: #e6e6e6;
+  border: 1px solid #3a3f4a;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+form button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: #f2d54a;
+  color: #15171c;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mensagem-erro {
+  color: #ff1500;
+  font-weight: bold;
+  padding: 16px;
+  background:#ffa1a1;
+  border: 1px solid #3a3f4a;
+  border-radius: 7px;
+}
+
+#resultado {
+  padding: 12px;
+  background: #fa6b0c;
+  border: 1px solid #3a3f4a;
+  border-radius: 3px;
+}
+
+/* Some quando está vazio */
+#mensagem-erro:empty,
+#resultado:empty {
+  display: none;
+}
+
 
 @media (max-width: 520px) {
   article img {

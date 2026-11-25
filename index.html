@@ -208,8 +208,28 @@
 
       </section>
 
-
     </section>
+
+    <section id="calculadora">
+      <h2>Calculadora de viagem pelo hiperespaço</h2>
+
+      <form id="formulario" novalidate>
+        <label for="distancia">Distância da viagem (anos-luz)</label>
+        <input type="number" id="distancia" name="distancia" step="any" placeholder="Ex.: 12" required>
+
+        <label for="velocidade">Velocidade da nave (anos-luz por hora)</label>
+        <input type="number" id="velocidade" name="velocidade" step="any" placeholder="Ex.: 2" required>
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <p id="mensagem-erro" role="alert"></p>
+      <p id="resultado" role="status"></p>
+    </section>
+  </main>
+
+
+
   </main>
   <script src="js/script.js"></script>
 </body>
