@@ -105,6 +105,7 @@ article h3 {
 article small {
   display: block;
   margin-bottom: 8px;
+  color:#ffe6e6
   font-style: italic;
 }
 
